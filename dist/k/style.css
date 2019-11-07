@@ -1,0 +1,66 @@
+svg {
+    width: 445px;
+}
+
+
+circle {
+	 animation-direction: reverse;
+	 transform-origin: center;
+	 animation: mercury-group 218s infinite;
+}
+ @keyframes mercury-group {
+	 0% {
+		 transform: rotateZ(0deg);
+	}
+	 100% {
+		 transform: rotateZ(-360deg);
+	}
+}
+ .bganimation path {
+	 animation: spin 12s linear infinite;
+	 animation-direction: reverse;
+	 transform-origin: center;
+	/* note below */
+}
+ @keyframes spin {
+	 0% {
+		 transform: rotate(0deg);
+	}
+	 100% {
+		 transform: rotate(360deg);
+	}
+}
+
+
+.st610,.st645,.tomove {
+    animation-direction: reverse;
+    transform-origin: center;
+    animation: mercury-group 78s  infinite;
+}
+
+@keyframes mercury-group {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+.st610,.tomove  {
+  stroke-dasharray: 816;
+  stroke-dashoffset: 0;  
+  animation: dash 78s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 816;    transform: rotate(0deg);   
+
+  }
+  100% {
+    stroke-dashoffset: 0;  transform: rotate(-360deg);
+  }
+} 
