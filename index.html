@@ -21,7 +21,7 @@
   <script src="svg/svg-inject.js"></script>
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
-
+  
 </head>
 
 <body>
@@ -334,17 +334,12 @@ document.getElementById('mobilmenu').style.display='block';
 
         <div class="inputemail">
 
-
-          <input style="
-  padding: 12px 20px;
-  margin: 8px 0px;
-  display: inline-block;
-  box-sizing: border-box;
-  font-size:16px;
-  color:rgb(185, 185, 185);" type="text" class="inputemailad" placeholder="Email Address">
-          <div class="newlineslider"></div>
-          <button class="inputsubmit" onclick="document.getElementById('modal-wrapper').style.display='block'">GET
-            STARTED</button>
+          <form id="getStartedForm">
+            <input style="padding: 12px 20px;margin: 8px 0px;display: inline-block;box-sizing: border-box;font-size:16px;color:rgb(185, 185, 185);" class="inputemailad" placeholder="Email Address" type="email" oninvalid="this.setCustomValidity('Enter a Valid Email')" oninput="this.setCustomValidity('')" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" >
+            <div class="newlineslider"></div>
+            <!-- <button class="inputsubmit" onclick="document.getElementById('modal-wrapper').style.display='block'" id="btnGetStarted" type="submit">GET STARTED</button> -->
+            <button class="inputsubmit" type="submit" onsubmit="getStartedClicked();">GET STARTED</button>
+          </form>
         </div>
       </div>
 
@@ -437,9 +432,8 @@ document.getElementById('mobilmenu').style.display='block';
 
                 <div class="tab">
                   <text style="padding-left: 10px; padding-bottom: 20px; font-size: 20px;">Full Name:</text>
-                  <p style="display: flex; flex-direction: row;"><input type="text" placeholder="Step 2 of 5"
-                      oninput="this.className = ''"
-                      style="color: rgb(235, 235, 235); border-radius: 10px; border-color: rgb(47, 106, 170); "></p>
+                  <p  style="display: flex; flex-direction: row;">
+                    <input name="fullName" id="fullName" type="text" placeholder="Step 2 of 5" oninput="this.className = ''" style="color: rgb(235, 235, 235); border-radius: 10px; border-color: rgb(47, 106, 170);" required></p>
                 </div>
 
                 <div class="tab">
@@ -450,10 +444,10 @@ document.getElementById('mobilmenu').style.display='block';
                       <span>Step 3 of 5</span>
                       <i class="fa fa-chevron-left" style="color: rgb(235, 235, 235);"></i>
                     </div>
-                    <div><input type="hidden" name="occupatioin"
+                    <div><input type="hidden" name="occupation"
                         style="color: rgb(235, 235, 235); border-radius: 10px; border-color: rgb(47, 106, 170); padding:10px">
                         </div>
-                    <ul class="dropdownoccupation-menu">
+                    <ul class="dropdownoccupation-menu" name="listOccup">
                       <li id="it">IT</li>
                       <li id="arts">Arts</li>
                       <li id="medical">Medical</li>
@@ -474,7 +468,7 @@ document.getElementById('mobilmenu').style.display='block';
                   <text style="padding-left: 10px; padding-bottom: 20px; font-size: 20px;">Password:</text>
                   <p style="display: flex; flex-direction: row;"><input type="password"
                       placeholder="We are almost there" oninput="this.className = ''"
-                      style="color: rgb(235, 235, 235); border-radius: 10px; border-color: rgb(47, 106, 170);"></p>
+                      style="color: rgb(235, 235, 235); border-radius: 10px; border-color: rgb(47, 106, 170);" required></p>
                 </div>
 
                 <div class="tab">
@@ -748,6 +742,7 @@ document.getElementById('mobilmenu').style.display='block';
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/Home/formValidator.js"></script>
   <script>
     // If user clicks anywhere outside of the modal, Modal will close
 
@@ -807,26 +802,63 @@ document.getElementById('mobilmenu').style.display='block';
       // ... and run a function that displays the correct step indicator:
       fixStepIndicator(n)
     }
+    
 
     function nextPrev(n) {
       // This function will figure out which tab to display
+      
+      console.log(n);
       var x = document.getElementsByClassName("tab");
+      
       // Exit the function if any field in the current tab is invalid:
       // if (n == 1 && !validateForm()) return false;
       // Hide the current tab:
-      x[currentTab].style.display = "none";
+      
+      ////x[currentTab].style.display = "none";
+      
       // Increase or decrease the current tab by 1:
-      currentTab = currentTab + n;
+      
+      ////currentTab = currentTab + n;
+      
       // if you have reached the end of the form... :
-      if (currentTab >= x.length) {
-        //...the form gets submitted:
-        document.getElementById("regForm").submit();
-        return false;
-      }
+      
+      ////if (currentTab >= x.length) {
+      //...the form gets submitted:
+      //document.getElementById("regForm").submit();
+      ////return false;
+            
       // Otherwise, display the correct tab:
-      showTab(currentTab);
-    }
+       if(n==1)
+         {
+          // $("#fullName").reportValidity();
+          var validationCheck= $("#regForm")[0].checkValidity();
+          console.log("isValid = "+validationCheck);
+          if(validationCheck)
+          {
+            x[currentTab].style.display = "none";
+            showTab(2);
+          }
+          else{
+            $("#fullName").reportValidity();
+            
+          }
+        }
+        // if(n==2)
+        // {
+        //      //$("#fullName").reportValidity();
+        //   var validationCheck= $("#regForm")[n-1].reportValidity();
+        //   console.log(validationCheck);
+        //   if(validationCheck)
+        //   {
+        //     x[currentTab].style.display = "none";
+        //     showTab(3);
+        //   }
+        // }
 
+
+
+    //}
+  }
     function validateForm() {
       // This function deals with validation of the form fields
       var x, y, z, i, valid = true;
