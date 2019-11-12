@@ -1496,3 +1496,164 @@ body .container .row.comparesec .col-lg-4 {
 
 
 }
+
+/* Samsung S7: */
+@media only screen 
+and (min-width: 414px) 
+and (max-width: 767px) 
+and (min-height: 732px)
+and (orientation : portrait)  
+{ 
+    .col-lg-8.bannerleft{
+        padding-bottom: 122px;
+    }
+}
+
+    /* Samsung S7 Edge: */
+    @media only screen 
+    and (min-width: 360px) 
+    and (max-width: 767px)
+    and (min-height: 640px)
+    and (orientation : portrait)  
+    { 
+        .col-lg-8.bannerleft{
+            padding-bottom: 36px;
+        }
+    } 
+    /* Samsung S8/S8+/S9/S9+ */
+	@media only screen 
+	and (min-width: 360px) 
+	and (max-width: 767px) 
+	and (min-height: 740px)
+    and (orientation : portrait)  
+    {
+         .col-lg-8.bannerleft{
+        padding-bottom: 136px;
+        background-size: 175% !important;
+        } 
+    }
+
+    /* Samsung S10 */
+	@media only screen 
+	and (min-width: 360px) 
+	and (max-width: 767px)
+	and (min-height: 760px)
+    and (orientation : portrait) 
+    { 
+        .col-lg-8.bannerleft{
+            padding-bottom: 157px;
+            background-size: 180% !important;
+        }
+    }
+
+    
+
+/* iPhoneX/XS/11 Pro:  */
+@media only screen 
+and (min-width: 375px) 
+and (max-width: 812px) 
+and (max-height: 812px) 
+and (-webkit-device-pixel-ratio: 3) 
+and (orientation : portrait) 
+{ 
+    .col-lg-8.bannerleft{
+        padding-bottom: 205px;
+        background-size: 180% !important;
+    }
+}
+
+
+/* Pixel2 */
+@media only screen 
+and (min-width: 411px) 
+and (max-width: 767px) 
+and (min-height: 731px) 
+and (orientation : portrait) 
+{ 
+    .col-lg-8.bannerleft{
+        padding-bottom: 122px;
+    }
+}
+/* Pixel2 XL */
+@media only screen 
+and (min-width: 411px) 
+and (max-width: 767px) 
+and (min-height: 823px)
+and (orientation : portrait) 
+{ 
+    .col-lg-8.bannerleft{
+        padding-bottom: 210px;
+        background-size: 180% !important;
+    }
+}
+
+/* iPhone XR/11: */
+@media only screen 
+and (min-width : 414px) 
+and (max-height : 896px) 
+and (-webkit-device-pixel-ratio : 2) 
+and (orientation : portrait) { 
+    .col-lg-8.bannerleft{
+        padding-bottom: 282px;
+        background-size: 190% !important;
+    }
+}	
+/* iPhone XS Max/11 Pro Max: */
+@media only screen 
+and (min-width : 414px) 
+and (max-height : 896px) 
+and (-webkit-device-pixel-ratio : 3) 
+and (orientation : portrait) 
+{ 
+    .col-lg-8.bannerleft{
+        padding-bottom: 281px;
+        background-size: 190% !important;
+    }
+}
+
+/* iPhone 6/7/8 Plus: */
+	@media only screen 
+    and (min-width: 414px) 
+    and (max-width : 736px)
+    and (max-height: 736px) 
+    and (-webkit-device-pixel-ratio: 3)
+    and (orientation : portrait)
+    {
+        .col-lg-8.bannerleft{
+            padding-bottom: 122px;
+        }
+       
+    }
+
+
+
+
+/* iPhone 6/7/8: */
+	@media only screen 
+    and (min-width: 375px) 
+    and (max-width : 667px) 
+    and (max-height: 667px) 
+	and (-webkit-device-pixel-ratio: 2)
+    and (orientation : portrait) 
+    { 
+        .col-lg-8.bannerleft{
+            padding-bottom: 62px;
+        }
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
