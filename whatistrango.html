@@ -21,7 +21,23 @@
 <script src="svg/svg-inject.js"></script>
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+<style>
+  .video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
 
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+</style>
 </head>
 
 <body>
@@ -169,7 +185,13 @@ document.getElementById('mobilmenu').style.display='block';
 
  
  </div>
- 
+ <br>
+<div class="d-flex justify-content-center">
+<div class="embed-responsive embed-responsive-16by9 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<iframe width="560" height="315" style="border-radius: 2rem;" src="https://www.youtube.com/embed/W0WHY5HoBfs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<br>
   
   <footer class="py-5" style="background-image:url('img/footer.png');background-repeat: no-repeat;
     background-size: cover; margin-top:17%;">
