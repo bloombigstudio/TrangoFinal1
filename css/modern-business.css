@@ -893,11 +893,11 @@ img.sectionimg {
     float: right !important;
 }
 .headingtext {
-       font-size: 71px !important;
+    font-size: 45px !important;
     padding-bottom: 18px;
 }
 ul.headinglist li {
-    font-size: 33px !important;
+    font-size: 30px !important;
 }
 
 }
@@ -1307,8 +1307,8 @@ input.inputemailad {
 }
 
 .headingtext{
-	    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: #243ea8;
 }
 .row.sectioncon {
