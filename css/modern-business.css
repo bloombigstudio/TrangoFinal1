@@ -384,7 +384,7 @@ body .onmobile .row.comparesec {
     margin-left: 12px !important;
 }
 body .onmobile .row.comparesec123 {
-    margin-left: 10px !important;
+    margin-left: 12px !important;
 }
 
 .col-lg-6.nointernet svg {
@@ -397,10 +397,14 @@ float: none !important;
 
 
 
-.row.comparesec123 img {
+/* .row.comparesec123 img {
    
     margin-left:38% !important
 }
+.row.comparesec img {
+   
+    margin-left:38% !important
+} */
 .row.comparesec h3 {
     font-size: 15px !important;
 }
@@ -420,7 +424,7 @@ body .container .row.comparesec .col-lg-4 {float: left;
     padding: 0px !important;
     margin: 3px !important;
     display: block;
-    margin-left: 0px !important;    background: #e5ecf2;
+    margin-left: 4px !important;    background: #e5ecf2;
 }
 body .container .row.comparesec123 .col-lg-4 {
     float: left;
@@ -717,6 +721,10 @@ img.sectionimg {
     float: right;
     width: 419px !important;    margin-top: -9px !important;
 }
+img.sectionimggif {
+    float: right;
+    width: 570px !important;    margin-top: -69px !important;
+}
 
 
 .bannerleft h4 {
@@ -888,6 +896,11 @@ input.inputemailad {
     max-width:93% !important;
 }
 img.sectionimg {
+    width: 512px !important;
+    margin: -14px auto !important;
+    float: right !important;
+}
+img.sectionimggif {
     width: 512px !important;
     margin: -14px auto !important;
     float: right !important;
@@ -1166,6 +1179,9 @@ div#carouselExampleIndicators {
 	img.sectionimg {
     width: 100% !important;
 }
+img.sectionimggif {
+    width: 100% !important;
+}
 .carousel-item h6, .carousel-item h3 {
     
     font-size: 15px;
@@ -1324,6 +1340,11 @@ ul.headinglist li {
     color: #014781;
 }
 img.sectionimg {
+    width: 357px;
+    margin: 0 auto;
+    display: block;
+}
+img.sectionimggif {
     width: 357px;
     margin: 0 auto;
     display: block;
@@ -1641,19 +1662,4 @@ and (orientation : portrait)
         }
     }
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
