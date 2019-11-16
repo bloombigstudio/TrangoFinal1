@@ -721,9 +721,9 @@ img.sectionimg {
     float: right;
     width: 419px !important;    margin-top: -9px !important;
 }
-img.sectionimggif {
+svg.sectionimgwehaveitall{
     float: right;
-    width: 570px !important;    margin-top: -69px !important;
+    width: 419px !important;    margin-top: -9px !important;
 }
 
 
@@ -900,11 +900,12 @@ img.sectionimg {
     margin: -14px auto !important;
     float: right !important;
 }
-img.sectionimggif {
+svg.sectionimgwehaveitall{
     width: 512px !important;
     margin: -14px auto !important;
     float: right !important;
 }
+
 .headingtext {
     font-size: 45px !important;
     padding-bottom: 18px;
@@ -1175,13 +1176,14 @@ div#carouselExampleIndicators {
     background-color: black;
 }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
 	img.sectionimg {
     width: 100% !important;
 }
-img.sectionimggif {
+svg.sectionimgwehaveitall{
     width: 100% !important;
 }
+
 .carousel-item h6, .carousel-item h3 {
     
     font-size: 15px;
@@ -1344,11 +1346,12 @@ img.sectionimg {
     margin: 0 auto;
     display: block;
 }
-img.sectionimggif {
+svg.sectionimgwehaveitall{
     width: 357px;
     margin: 0 auto;
     display: block;
 }
+
 p.footetext {
     font-family: 'Montserrat', sans-serif;
     color: white;
