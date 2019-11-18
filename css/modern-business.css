@@ -274,7 +274,7 @@ img {
 circle {
 	 animation-direction: reverse;
 	 transform-origin: center;
-	 animation: mercury-group 218s infinite;
+	 /* animation: mercury-group 218s infinite; */
 }
  @keyframes mercury-group {
 	 0% {
@@ -325,7 +325,7 @@ circle {
 
 
 
-.st610{
+.st27{
   stroke-dasharray: 816;
   stroke-dashoffset: 0;  
   animation: dash 78s;
