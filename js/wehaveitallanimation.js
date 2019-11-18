@@ -1,13 +1,19 @@
 const rotategroup = document.querySelector('.rotategroup');
+const rotateicon = document.querySelectorAll('.rotateicon');
 
 TweenMax.to(rotategroup, 78, {
     rotation: -360,
-    transformOrigin: "50% 50%",
+    transformOrigin: "center center",
     repeat: -1,
     ease: Linear.easeNone
 });
 
-
+TweenMax.to(rotateicon, 78, {
+    rotation: 360,
+    transformOrigin: "center center",
+    repeat: -1,
+    ease: Linear.easeNone
+});
 
 //CSS
 // .rotategroup{
