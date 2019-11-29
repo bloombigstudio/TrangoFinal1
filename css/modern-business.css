@@ -156,9 +156,17 @@ body .container .row.comparesec123 .col-lg-4 {
 
 
 #carouselExampleIndicators .carousel-inner .carousel-item.maintntransfer {
-    background-image: url('https://bloombigstudio.com/trango3/img/zzz.png') !important;
-    background-size: 126% !important;
-    background-position: 0px !important;
+    /* background-image: url('https://bloombigstudio.com/trango3/img/zzz.png') !important; */
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+.carousel-item.icone6 {
+    background-size: contain !important;
+    background-position: right !important;
+    width:100%;
+    height:100%;
 }
 
 
@@ -486,7 +494,7 @@ display:block !important;
 }
 
 
-@media (max-width: 993px){
+@media (max-width: 991px){
 .newlineslider {
     display: block !important;
 }
@@ -508,11 +516,50 @@ display:block !important;
     margin-top: 88px !important;
     top: -12px !important;
 }
+.carousel-item.icone6{
+    background-image: url(../img/6_full.png) !important; 
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+.carousel-item.wehaveitall{
+    background-image: url(../img/1_full.png) !important; 
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
 
+.carousel-item.sharemul{
+    background-image: url(../img/2_full.png) !important; 
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+.carousel-item.unlimetedslide{
+    background-image: url(../img/3_full.png) !important; 
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.carousel-item.maintntransfer{
+    background-image: url(../img/4_full.png) !important; 
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
 
 #carouselExampleIndicators .carousel-inner .carousel-item.privateslide {
-    background-size: 164% !important;
-    background-position: 101%;
+    background-image: url(../img/5_full1.png) !important; 
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .carousel-inner .carousel-item img.img1 {
@@ -652,9 +699,35 @@ input.inputemailad {
     margin-left: 36px !important;
 }
 
+.carousel-item.maintntransfer {
+    background-size: contain !important;
+    background-position: right !important;
+    width:100%;
+    height:100%;
+}
+
+.carousel-item.sharemul{
+    background-size: contain !important;
+    background-position: right !important;
+    width:100%;
+    height:100%;
+}
+.carousel-item.icone6 {
+    background-size: contain !important;
+    background-position: right !important;
+    width:100%;
+    height:100%;
+}
+
 .carousel-item {
-    background-size: cover !important;
-    background-position: -16px !important;
+    background-size: contain !important;
+    /* background-position: -16px !important; */
+}
+.carousel-item.privateslide {
+    background-size: contain !important;
+    background-position: right !important;
+    width:100%;
+    height:100%;
 }
 
 
@@ -679,9 +752,15 @@ input.inputemailad {
 }
 
 
-.carousel-item.unlimetedslide img {
-    width: 500px !important;
-    margin-left: 45% !important;
+.carousel-item.unlimetedslide {
+    /* width: 500px !important; */
+    /* max-height:706px !important; */
+    /* background-size: 100%;
+    margin-left: 45% !important; */
+    background-size: contain !important;
+    background-position: right !important;
+    width:100%;
+    height:100%;
 }
 .carousel-item.unlimetedslide .carousel-caption.d-none.d-md-block {
     margin-left: 33% !important;
@@ -694,10 +773,17 @@ input.inputemailad {
 .headingtext {
     font-size: 50px !important;
 }
-.maintntransfer {
-    min-height: 761px !important;
-    background-size: 148% !important;
-    background-position: 61% !important;
+.carousel-item.sharemu{
+    background-size: contain !important;
+    background-position: right !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+.carousel-item.maintntransfer {
+    background-size: contain !important;
+    background-position: right !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 
@@ -707,10 +793,22 @@ input.inputemailad {
     margin-left: 14% !important;
 }
 
-
-.carousel-item.unlimetedslide img {
-    width: 500px !important;
-    margin-left: 38% !important;
+.carousel-item.icone6  {
+    background-size: contain !important;
+    background-position: right !important;
+    width:100%;
+    height:100%;
+}
+.carousel-item.unlimetedslide {
+    /* width: 500px !important; */
+    /* max-height: 706px !important; */
+    /* min-height: 706px !important; */
+    /* background-size: 100%;
+    margin-left: 38% !important; */
+    background-size: contain !important;
+    background-position: right !important;
+    width:100%;
+    height:100%;
 }
 .carousel-item.unlimetedslide .carousel-caption.d-none.d-md-block {
     margin-left: 24% !important;
