@@ -519,14 +519,14 @@ display:block !important;
     top: -12px !important;
 }
 .carousel-item.icone6{
-    background-image: url(../img/6_full3.png) !important; 
+    background-image: url(../img/6_full4.png) !important; 
     background-size: cover !important;
     background-position: right !important;
     width: 100% !important;
     height: 100% !important;
 }
 .carousel-item.wehaveitall{
-    background-image: url(../img/1_full.png) !important; 
+    background-image: url(../img/1_full1.png) !important; 
     background-size: cover !important;
     background-position: center !important;
     width: 100% !important;
@@ -534,14 +534,14 @@ display:block !important;
 }
 
 .carousel-item.sharemul{
-    background-image: url(../img/2_full.png) !important; 
+    background-image: url(../img/2_full1.png) !important; 
     background-size: cover !important;
     background-position: center !important;
     width: 100% !important;
     height: 100% !important;
 }
 .carousel-item.unlimetedslide{
-    background-image: url(../img/3_full.png) !important; 
+    background-image: url(../img/3_full1.png) !important; 
     background-size: cover !important;
     background-position: center !important;
     width: 100% !important;
@@ -549,7 +549,7 @@ display:block !important;
 }
 
 .carousel-item.maintntransfer{
-    background-image: url(../img/4_full9.png) !important; 
+    background-image: url(../img/4_full10.png) !important; 
     background-size: cover !important;
     background-position: right !important;
     width: 100% !important;
@@ -1996,7 +1996,10 @@ and (orientation : portrait)
         
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	
-        .carousel-inner .carousel-inner-trybuy{
+        .carousel-inner-trybuy{
+        height: 538px;
+    }
+    .carousel-inner{
         height: 538px;
     }
     .container {
